@@ -43,7 +43,7 @@ template <typename Head, typename... Tail> void dbg_out(Head H, Tail... T) {
 
 //  Premier Empire
 
-//  <|°_°|>
+//  <|._.|>
 
 typedef long long ll;
 typedef pair <int, int> pii;
