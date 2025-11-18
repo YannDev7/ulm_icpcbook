@@ -24,7 +24,6 @@ template <typename T> struct HalfPlane {
   }
 };
 // Halfplane to the left of line
-
 template <typename T> vector<Point<T>> intersect(vector<HalfPlane<T>> b) {
   vector<Point<T>> bx = {{DINF, DINF}, {-DINF, DINF}, {-DINF, -DINF}, {DINF, -DINF}};
   for (int i = 0; i < 4; ++i) b.emplace_back(bx[i], bx[(i + 1) % 4]);

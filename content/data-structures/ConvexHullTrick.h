@@ -17,7 +17,6 @@ struct cht {
   vector<double> remf; // (D)
   vector<int> cnt; // (D)
   int fst = 0;
-
   // increasing k
   void add(int k, int b) {
     double x = -1e18;
@@ -40,7 +39,6 @@ struct cht {
     int ind = upper_bound(from.begin(), from.end(), x) - from.begin() - 1;
     return arr[ind].first * x + arr[ind].second;
   }
-
   // TO CHECK
   double getIncreasing(double x) {
     while (fst + 1 < (int)arr.size() and
@@ -49,7 +47,6 @@ struct cht {
       ++fst;
     return arr[fst].first * x + arr[fst].second;
   }
-
   // (D)
   void undo() {
     arr.pop_back();

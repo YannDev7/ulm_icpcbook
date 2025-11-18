@@ -20,6 +20,7 @@
 	%\kactlimport{BumpAllocatorSTL.h}
 	% \kactlimport{Unrolling.h}
 	%\kactlimport{SIMD.h}
+
 \section{Techniques}
 \underline{\textbf{min-weight vertex cover in a bipartite graph}}: partition into A and B. add edges $s \rightarrow A$ with capacities $w(A)$ and edges $B \rightarrow t$ with capacities $w(B)$. add edges of capacity $\infty$ from A to B where there are edges in the graph. answer is maxflow. the vertex cover is the set of nodes that are
 adjacent to cut edges, or alternatively, the left-side nodes NOT reachable from the source and the right-side edges reachable from the source (in the residual network).\\
